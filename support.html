@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Support</h1>
+        <p>Leave your complaint or request</p>
+    </header>
+
+    <section id="support-form">
+        <form action="mailto:mr.chao2501@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Your name or nickname:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label>our email:</label><br>
+            <p>mr.chao2501@gmail.com</p><br>
+
+            <label for="message">Your text:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <button onclick="goBack()">⬅ Go back</button>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
