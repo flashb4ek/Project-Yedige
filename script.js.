@@ -1,0 +1,27 @@
+let isRussian = true; // Флаг для отслеживания текущего языка
+
+function toggleLanguage() {
+    if (isRussian) {
+        // Переключаем на английский
+        document.getElementById("title").innerText = "Hello, I'm Yedige!";
+        document.getElementById("subtitle").innerText = "Student | Athlete | Gamer";
+        document.getElementById("about-title").innerText = "About Me";
+        document.getElementById("about-text").innerText = "I'm a 10th-grade student who enjoys sports. In my free time, I love playing video games, especially CS2 and Fortnite.";
+        document.getElementById("games-title").innerText = "My Favorite Games";
+        document.getElementById("games-list").innerHTML = "<li>Counter-Strike 2 (CS2)</li><li>Fortnite</li>";
+        document.getElementById("contact-title").innerText = "Contact Me";
+        document.getElementById("email-text").innerHTML = 'Email: <a href="mailto:yedige2501@gmail.com">yedige2501@gmail.com</a>';
+    } else {
+        // Переключаем на русский
+        document.getElementById("title").innerText = "Привет, я Едыге!";
+        document.getElementById("subtitle").innerText = "Школьник | Спортсмен | Геймер";
+        document.getElementById("about-title").innerText = "Обо мне";
+        document.getElementById("about-text").innerText = "Я учусь в 10 классе и увлекаюсь спортом. В свободное время люблю играть в видеоигры, особенно в CS2 и Fortnite.";
+        document.getElementById("games-title").innerText = "Мои любимые игры";
+        document.getElementById("games-list").innerHTML = "<li>Counter-Strike 2 (CS2)</li><li>Fortnite</li>";
+        document.getElementById("contact-title").innerText = "Связаться со мной";
+        document.getElementById("email-text").innerHTML = 'Email: <a href="mailto:yedige2501@gmail.com">yedige2501@gmail.com</a>';
+    }
+    
+    isRussian = !isRussian; // Меняем флаг
+}
